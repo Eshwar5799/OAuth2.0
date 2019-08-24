@@ -6,6 +6,7 @@ const User=require('../Models/User_Models');
 
 
 passport.serializeUser((user,done)=>{
+    console.log(user.id)
     done(null,user.id)
 })
 
