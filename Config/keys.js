@@ -12,7 +12,7 @@ module.exports={
         consumerkey:"DfbUqrs9sauV8Ht9pNSEipWGG",
         clientSecret:"ayDAzWzZMECISBsV4GPPoZD78Kh7DXc9BDUzZ7EwJTNROSfWHo",
         host:"http://localhost:9000/",
-        callbackURL:"http://localhost:9000/auth/twitter/redirect"
+        callbackURL:"http://127.0.0.1:9000/auth/twitter/redirect"
     },
     linkedin:{
         clientID:"77ahlyciugvv3n",
