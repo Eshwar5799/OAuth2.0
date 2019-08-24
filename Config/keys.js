@@ -9,10 +9,10 @@ module.exports={
         dbURI:"mongodb+srv://Eshwar:5799eshwar@cluster0-vzkbz.mongodb.net/test?retryWrites=true&w=majority"
     },
     twitter:{
-        clientID:"jIQ2hXFceWEBrvtuskLbK73Qr",
-        clientSecret:"ZMHED6XGc6Ub7iWj3phCWE4b2EykM4iNhJWfiZnSQHp2j8DpBZ",
+        consumerkey:"DfbUqrs9sauV8Ht9pNSEipWGG",
+        clientSecret:"ayDAzWzZMECISBsV4GPPoZD78Kh7DXc9BDUzZ7EwJTNROSfWHo",
         host:"http://localhost:9000/",
-        callbackURL:"http://localhost:9000/auth/twitter/redirect"
+        callbackURL:"http://localhost:9000/?source=twitter"
     },
     linkedin:{
         clientID:"77ahlyciugvv3n",
