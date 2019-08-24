@@ -1,0 +1,11 @@
+module.exports={
+    facebook:{
+        clientID:"1117633608427751",
+        clientSecret:"e711a532a0ebe1c20f69ed2aa5942127",
+        host:"http://localhost:9000/",
+        callbackURL:"http://localhost:9000/auth/facebook/redirect"
+    },
+    mongodb:{
+        dbURI:"mongodb+srv://Eshwar:5799eshwar@cluster0-vzkbz.mongodb.net/test?retryWrites=true&w=majority"
+    }
+}
