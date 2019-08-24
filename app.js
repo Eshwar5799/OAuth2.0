@@ -11,7 +11,7 @@ const port=9000;
 var session=require('express-session');
 
 // Express session for twitter
-app.use(session({ secret: 'keyboard cat', key: 'sid' ,cookie: { secure: true }}))
+app.use(session({ secret: 'keyboard cat', key: 'sid' }))
 
 app.use(passport.initialize())
 app.use(passport.session())
