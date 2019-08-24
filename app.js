@@ -8,7 +8,19 @@ const authRoutes=require('./routes/auth_routes');
 const authRoutestwitter=require('./routes/auth_routes_twitter')
 const app=express()
 const port=9000;
+var session=require('express-session');
+
+// Express session for twitter
+app.use(session({
+    secret: 'keyboard cat',
+    resave: false,
+    saveUninitialized: true,
+    cookie: { secure: true }
+  }))
+
+
 app.use(passport.initialize())
+app.use(passport.session())
 
 
 
@@ -19,9 +31,14 @@ const db=mongoose.connection;
 db.on('error',console.log.bind(console,'MongoDB error'))
 
 
+
+
+
+
+
 // Others facebook
 app.use('/auth',authRoutes);
-// Others twitter
+// Others twitter different form
 app.use('/auth',authRoutestwitter);
 
 //Routes
